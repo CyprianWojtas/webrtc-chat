@@ -20,6 +20,25 @@ body
 	grid-template-columns: 1fr auto;
 	gap: 0.5rem;
 }
+@media (max-width: 48rem)
+{
+	body
+  {
+		grid-template-columns: 1fr;
+		min-height: 100vh;
+		height: auto;
+	}
+	.input
+  {
+	 grid-column: 1 / 2;
+		margin-top: 1rem;
+	}
+	.connetions
+	{
+		grid-row: 1 / 2;
+		margin-bottom: 1rem;
+	}
+}
 .message .user
 {
 	margin-right: 1ch;
