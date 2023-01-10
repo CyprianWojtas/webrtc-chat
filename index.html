@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebRTC Chat</title>
+	<script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="messages">
+
+	</div>
+	<div class="connetions">
+		<div>
+			<h4>My ID:</h4>
+			<span class="myId"></span>
+			<h4>My name:</h4>
+			<input type="text" id="nameInput">
+		</div>
+		<h4>Connections:</h4>
+		<div class="connectionList"></div>
+		<div class="newConnection">
+			<input type="text" id="connectionIdInput">
+			<button id="connect">Connect!</button>
+		</div>
+	</div>
+
+	<div class="input">
+		<input type="text" id="messageInput">
+		<button id="sendMessage">Send!</button>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

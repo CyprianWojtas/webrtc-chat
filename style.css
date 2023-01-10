@@ -1,0 +1,47 @@
+body
+{
+	display: grid;
+	grid-template-columns: 1fr 24rem;
+	height: 100vh;
+	margin: 0;
+	padding: 1rem;
+	box-sizing: border-box;
+	grid-template-rows: 1fr auto;
+	font-family: sans-serif;
+}
+.messages
+{
+	overflow: auto;
+}
+.input
+{
+	grid-column: 1 / 3;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 0.5rem;
+}
+.message .user
+{
+	margin-right: 1ch;
+	font-weight: bold;
+}
+h4
+{
+	margin-bottom: 0;
+}
+.newConnection
+{
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 0.5rem;
+}
+.connectionList, .myId
+{
+	font-family: monospace;
+	font-size: 1rem;
+}
+#connectionIdInput
+{
+	font-family: monospace;
+	text-align: center;
+}
